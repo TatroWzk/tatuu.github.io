@@ -13,7 +13,7 @@ const readUser = (req, res) => {
     if (result[0] !== undefined) {
       res.json(result[0]);
     } else {
-      res.json({ message: 'Usuario no encontrado' });
+      res.json({ message: 'Pedido no encontrado' });
     }
   });
 };
@@ -28,7 +28,7 @@ const createUser = (req, res) => {
   database.query(query, (err, result) => {
     if (err) throw err;
     // console.log(result);
-    res.send({ message: 'Usuario creado' });
+    res.send({ message: 'Pedido no encontrado' });
   });
 };
 
@@ -42,7 +42,7 @@ const updateUser = (req, res) => {
 
   database.query(query, (err, result) => {
     if (err) throw err;
-    res.json({ message: 'Usuario actualizado' });
+    res.json({ message: 'Pedido actualizado' });
   });
 };
 
@@ -56,7 +56,7 @@ const deleteUser = (req, res) => {
   database.query(query, (err, result) => {
     if (err) throw err;
     // console.log(result);
-    res.json({ message: 'Usuario eliminado' });
+    res.json({ message: 'Pedido cancelado' });
   });
 };
 

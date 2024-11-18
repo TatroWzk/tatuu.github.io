@@ -78,7 +78,7 @@ formDelete.addEventListener('submit', async (e) => {
       if (data.message) {
         message = data.message;
       } else {
-        message = `ID: ${data.id} | Producto: ${data.producto} | Edad: ${data.cantidad}`;
+        message = `ID: ${data.id} | Producto: ${data.producto} | cantidad: ${data.cantidad}`;
       }
     });
 
