@@ -1,6 +1,6 @@
 const database = require('../config/database');
 const mysql2 = require('mysql2');
-
+//crud
 const readUser = (req, res) => {
   const { id } = req.params;
 
