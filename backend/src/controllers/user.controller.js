@@ -28,7 +28,7 @@ const createUser = (req, res) => {
   database.query(query, (err, result) => {
     if (err) throw err;
     // console.log(result);
-    res.send({ message: 'Pedido no encontrado' });
+    res.send({ message: 'Pedido creado' });
   });
 };
 
@@ -56,7 +56,7 @@ const deleteUser = (req, res) => {
   database.query(query, (err, result) => {
     if (err) throw err;
     // console.log(result);
-    res.json({ message: 'Pedido cancelado' });
+    res.json({ message: 'Pedido eliminado' });
   });
 };
 
