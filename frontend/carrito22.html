@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-4">Carrito CRUD</h1>
+      
+      <!-- GET Section -->
+      <section class="mb-4">
+        <h2>Consultar pedido</h2>
+        <form id="getCarrito">
+          <div class="mb-3">
+            <label for="id">ID Pedido</label>
+            <input type="text" id="id" name="id" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary">Consultar</button>
+        </form>
+        <p id="textoGet" class="mt-3"></p>
+      </section>
+      
+      <!-- POST Section -->
+      <section class="mb-4">
+        <h2>Agregar pedido</h2>
+        <form id="postCarrito">
+          <div class="mb-3">
+            <label for="producto">Producto</label>
+            <input type="text" id="producto" name="producto" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" name="modelo" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" name="cantidad" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-success">Agregar</button>
+        </form>
+        <p id="textoPost" class="mt-3"></p>
+      </section>
+      
+      <!-- PUT Section -->
+      <section class="mb-4">
+        <h2>Actualizar pedido</h2>
+        <form id="putCarrito">
+          <div class="mb-3">
+            <label for="id">ID Pedido</label>
+            <input type="text" id="id" name="id" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="producto">Producto</label>
+            <input type="text" id="producto" name="producto" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" name="modelo" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" name="cantidad" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-warning">Actualizar</button>
+        </form>
+        <p id="textoPut" class="mt-3"></p>
+      </section>
+      
+      <!-- DELETE Section -->
+      <section class="mb-4">
+        <h2>Eliminar pedido</h2>
+        <form id="deleteCarrito">
+          <div class="mb-3">
+            <label for="id">ID Pedido</label>
+            <input type="text" id="id" name="id" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-danger">Eliminar</button>
+        </form>
+        <p id="textoDelete" class="mt-3"></p>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

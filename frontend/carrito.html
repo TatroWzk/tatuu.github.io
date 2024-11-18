@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="ecommerce, kids, store">
+    <meta name="description" content="Bootstrap 5 Kids Store Ecommerce HTML CSS Template">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&family=Nunito:wght@700;800;900;1000&display=swap" rel="stylesheet">
+    <script src="js/modernizr.js"></script>
+    <title>Tatu.u CRUD Integration</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header" class="site-header bg-light py-3">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-lg">
+          <a class="navbar-brand me-5" href="#">
+            <img src="images/main-logo.png" alt="brand">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+            <svg class="navbar-icon" width="35" height="35">
+              <use xlink:href="#navbar-icon"></use>
+            </svg>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-5">
+                <li class="nav-item">
+                  <a class="nav-link text-dark active" href="#">Home</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CRUD Section -->
+    <section id="crud" class="py-5">
+      <div class="container">
+        <h1 class="text-center">CARRITO</h1>
+        <!-- GET Section -->
+        <div class="my-4">
+          <h2>Numero de pedido</h2>
+          <form id="getUsuario" class="mb-3">
+            <label for="idUsuarioGet">Codigo de pedido</label>
+            <input type="text" name="idUsuarioGet" id="id" class="form-control mb-2" />
+            <input type="submit" value="Enviar" class="btn btn-primary" />
+          </form>
+          <p id="textoGet">Info pedido</p>
+        </div>
+        <!-- POST Section -->
+        <div class="my-4">
+          <h2>Hacer pedido</h2>
+          <form id="postUsuario" class="mb-3">
+            <label for="producto_Post">Producto</label>
+            <input type="text" name="producto_Post" id="producto_" class="form-control mb-2" />
+            <label for="cantidad_Post">Cantidad</label>
+            <input type="text" name="cantidad_Post" id="cantidad_" class="form-control mb-2" />
+            <input type="submit" value="Enviar" class="btn btn-primary" />
+          </form>
+          <p id="textoPost">Info Producto</p>
+        </div>
+        <!-- PUT Section -->
+        <div class="my-4">
+          <h2>Actualizar pedido</h2>
+          <form id="putUsuario" class="mb-3">
+            <label for="idUsuarioPUT">Codigo</label>
+            <input type="text" name="idUsuarioPUT" id="id" class="form-control mb-2" />
+            <label for="producto_Put">Producto</label>
+            <input type="text" name="producto_Put" id="producto_" class="form-control mb-2" />
+            <label for="cantidad_Put">Cantidad</label>
+            <input type="text" name="cantidad_Put" id="cantidad_" class="form-control mb-2" />
+            <input type="submit" value="Enviar" class="btn btn-primary" />
+          </form>
+          <p id="textoPut">Info Producto</p>
+        </div>
+        <!-- DELETE Section -->
+        <div class="my-4">
+          <h2>Cancelar pedido</h2>
+          <form id="deleteUsuario" class="mb-3">
+            <label for="idUsuarioDelete">Codigo</label>
+            <input type="text" name="idUsuarioDelete" id="id" class="form-control mb-2" />
+            <input type="submit" value="Enviar" class="btn btn-primary" />
+          </form>
+          <p id="textoDelete">Info Usuario</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-light py-5">
+      <div class="container">
+        <p class="text-center">© 2024 Tatu.u | All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
